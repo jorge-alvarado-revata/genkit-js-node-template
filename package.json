@@ -1,0 +1,28 @@
+{
+  "name": "genkit-js-node-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --watch src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node start src/index.js",
+    "debug": "node src/index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@genkit-ai/express": "^1.7.0",
+    "@genkit-ai/googleai": "^1.7.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "genkit": "^1.7.0",
+    "genkit-cli": "^1.7.0",
+    "helmet": "^8.1.0",
+    "joi": "^17.13.3",
+    "morgan": "^1.10.0",
+    "undici": "^6.21.2"
+  }
+}
