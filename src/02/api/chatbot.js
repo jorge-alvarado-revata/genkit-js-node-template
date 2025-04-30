@@ -1,11 +1,8 @@
 'use strict'
 
-
 import express from 'express'
 import { gemini20Flash, googleAI } from '@genkit-ai/googleai'
 import { genkit, z} from 'genkit'
-
-
 
 
 export const RequestIn = z.object({
@@ -117,7 +114,7 @@ router.post('/', async (req, res)=>{
 
   
     if (!respuesta){
-      throw new createHTTPError("google GENAI secret key not found!");
+      throw new createHTTPError("Error en respuesta de flujo!");
     }
     else {
 

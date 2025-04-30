@@ -65,7 +65,9 @@ export const hellowordlflow2 = ai.defineFlow(
         schema: ResponseOut
        }
   });
-    return text
+
+  const value = ResponseOut.parse(JSON.parse(text));
+    return value
   }
 
 )
